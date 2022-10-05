@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float movementSpeed = 5;
     public float xRange = 8;
-    public GameObject projectilePrefab;
+    public GameObject bulletPrefab;
 
     private float _horizontalInput;
 
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
       
       if(Input.GetKeyDown(KeyCode.Space))
       {
-          Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+          Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);
       }
     }
     void PlayerMovement()
